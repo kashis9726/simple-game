@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashis's World - Select Level</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select Level</h1>
+    <button onclick="selectLevel('easy')">Easy</button>
+    <button onclick="selectLevel('medium')">Medium</button>
+    <button onclick="selectLevel('hard')">Hard</button>
+  </div>
+  <script>
+    function selectLevel(level) {
+      localStorage.setItem('gameLevel', level); // Save level to localStorage
+      window.location.href = 'theme.html'; // Redirect to theme selection
+    }
+  </script>
+</body>
+</html>

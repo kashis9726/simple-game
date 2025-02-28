@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashis's World - Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Kashis's World - Snake Game</h1>
+    <div class="game-board" id="gameBoard"></div>
+    <div class="leaderboard">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard"></ul>
+    </div>
+<div class="controls">
+  <button onclick="changeDirection('up')">Up</button>
+  <button onclick="changeDirection('down')">Down</button>
+  <button onclick="changeDirection('left')">Left</button>
+  <button onclick="changeDirection('right')">Right</button>
+</div>
+  </div>
+  <script src="script.js"></script>
+  <script src="leaderboard.js"></script>
+</body>
+</html>

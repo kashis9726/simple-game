@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashis's World - Select Theme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select Theme</h1>
+    <button onclick="selectTheme('water')">Water</button>
+    <button onclick="selectTheme('ground')">Ground</button>
+    <button onclick="selectTheme('space')">Space</button>
+  </div>
+  <script>
+    function selectTheme(theme) {
+      localStorage.setItem('gameTheme', theme); // Save theme to localStorage
+      window.location.href = 'game.html'; // Redirect to game page
+    }
+  </script>
+</body>
+</html>
